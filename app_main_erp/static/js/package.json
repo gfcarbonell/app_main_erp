@@ -1,0 +1,40 @@
+{
+  "name": "app_main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify backbone/main.js > ./main.js -t [ babelify --presets [ es2015 react ] ] "
+  },
+  "author": "Carbonell Saravia Roberto Gian Franco",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "backbone": "^1.3.3",
+    "browserify": "^13.1.1",
+    "jquery": "^3.1.1",
+    "materialize-css": "^0.97.8",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "uid": "0.0.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "browserify-shim": "^3.8.12"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
+    "materialize": "./node_modules/materialize-css/dist/js/materialize.min.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "materialize": "materialize"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

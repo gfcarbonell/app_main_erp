@@ -1,0 +1,188 @@
+@import "../js/node_modules/materialize-css/dist/css/materialize.min.css"
+@import "decorations.styl"
+@import "components.styl"
+@import "normalize.styl"
+
+li
+	list-style none
+
+a
+article
+aside
+body
+div
+figcaption
+figure
+h1
+h2
+h3
+h4
+h5
+header
+i
+input
+li
+p
+section
+select
+option
+span
+table
+tbody
+thead
+td
+th
+textarea
+th
+thead
+tr
+ul
+ol
+video
+iframe
+form
+img
+	box-sizing border-box
+	margin 0
+	padding 0
+a
+	text-decoration none
+	color white
+body
+	font-family "Sans-Serif" "Comic Sans MS"
+	font-size 16px
+img
+	vertical-align top
+	
+.video-fullscreen{
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: 90%; z-index: -100;
+	background:black;
+ }
+.header-index 
+	position relative
+	width 100%
+	height 100vh
+	max-height 100%
+	&-heading 
+		position absolute 
+		top 0 
+		width 100%
+		z-index 20
+
+.aside-menu-container
+	height 40vh
+	overflow-y auto 
+	width 65px
+	background transparent
+	box-shadow 0 0 7px black
+	border-radius 0 .5em .5em 0
+	position fixed 
+	top 35%
+	left -48px
+	transition .3s
+	border 1px solid transparent
+	&:hover 
+		border-top 1px solid white
+		border-right 1px solid white
+		border-bottom 1px solid white
+		left 0
+	&::-webkit-scrollbar 
+		display none
+	
+.aside-menu 
+	display flex 
+	justify-content center
+	flex-direction column
+	transition .3s
+	background rgba(white, .2)
+	&:hover 
+		>li
+			>a 
+				margin .35em auto
+	&-item
+		>a 
+			display block
+			height 35px
+			width 35px
+			margin .35em 0
+			>img 
+				box-shadow 0 0 7px black
+				display block
+				height 35px
+				transition .3s
+				width 35px
+				border 2px solid white
+				border-radius 50%
+				&:hover 
+					border 2px solid white
+					box-shadow 0 0 7px white
+					transform scale(1.2) rotate(360deg)
+
+					
+.slider
+	background transparent
+	z-index 0
+	.slides
+		background transparent
+		li 	
+			.caption 
+				top 82%
+				text-shadow 1px 1px 7px black
+				h3 
+					font-size 1em
+				h5 
+					font-size .8em
+
+    
+@media screen and (min-width:480px)
+	.aside-menu-container
+		width 75px
+		left -58px
+	.aside-menu 
+		&-item
+			>a 
+				height 45px
+				width 45px
+				>img 
+					height 45px
+					width 45px
+
+	.slider
+		.slides
+			li 	
+				.caption 
+					top 65%
+					text-shadow 1px 1px 7px black
+					h3 
+						font-size 1.6em
+					h5 
+						font-size 1.4em
+@media screen and (min-width:1000px)
+	.video-fullscreen
+		display block
+	.aside-menu-container
+		width 85px
+		left -68px
+	.aside-menu 
+		&-item
+			>a 
+				width 55px
+				height 55px
+				>img 
+					width 55px
+					height 55px
+	.slider
+		.slides
+			li 	
+				>img 	
+					display none
+				.caption 
+					top 75%
+					text-shadow 1px 1px 7px black
+					h3 
+						font-size 2.2em
+					h5 
+						font-size 1.8em
+

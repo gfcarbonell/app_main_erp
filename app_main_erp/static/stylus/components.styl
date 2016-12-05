@@ -1,0 +1,33 @@
+.container-modulo-heading
+	width 80%
+	margin 0 auto
+.container-modulo
+	display flex 
+	justify-content space-between
+	align-items center
+	&-avatar 
+		&-imagen 
+			width 80px 
+			height 80px
+		#avatar_imagen_right
+			display none
+	    
+@media screen and (min-width:480px)
+	.container-modulo-heading
+		width 60%
+	.container-modulo
+		&-avatar 
+			&-imagen 
+				width 100px 
+				height 100px
+			#avatar_imagen_right
+				display block
+				
+@media screen and (min-width:1000px)
+	.container-modulo
+		&-avatar 
+			&-imagen 
+				width 128px 
+				height 128px
+			#avatar_imagen_right
+				display block

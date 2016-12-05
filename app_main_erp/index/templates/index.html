@@ -1,0 +1,105 @@
+{% extends "base_main.html" %}
+{% load static from staticfiles %}
+{% block header %}
+	<div class="header-index">
+		<div class="header-index-heading"id="modulo_avatar">
+			
+		</div>
+		<div class="slider fullscreen">
+		    <ul class="slides">
+		      <li>
+		        
+		        <div class="caption center-align">
+		          <h3>This is our big Tagline!</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        
+		        <div class="caption left-align">
+		          <h3>Left Aligned Caption</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        
+		        <div class="caption right-align">
+		          <h3>Right Aligned Caption</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		      <li>
+		       
+		        <div class="caption center-align">
+		          <h3>This is our big Tagline!</h3>
+		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		        </div>
+		      </li>
+		    </ul>
+	    </div>
+		<video class="video-fullscreen" autoplay loop>
+	   		<source src="{% static "video/Tiesto & Don Diablo - Chemicals.mp4"%}" type="video/mp4">
+	   		Your browser does not support the video tag.	
+		</video>
+	</div>
+{% endblock header %}
+{% block aside %}
+	<div class="aside-menu-container">
+		<ul class="aside-menu">
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+			<li class="aside-menu-item">
+				<a href=""> 
+					<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""/>
+				</a>
+			</li>
+		</ul>
+	</div>
+{% endblock aside %}
+{% block section %}
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel in enim iusto eveniet quibusdam ea accusantium esse optio repudiandae ad, provident ab, corporis obcaecati sed praesentium aliquam! Non, vero, voluptates!			
+{% endblock section %}	
+{% block scripts %}
+ <script>
+  	$(document).ready(function(){
+      $('.slider').slider({full_width: true});
+
+    });
+
+ </script>
+{% endblock scripts %}
+
+
